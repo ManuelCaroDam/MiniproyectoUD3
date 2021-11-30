@@ -6,7 +6,7 @@ import { GasolinerasListResponse } from '../models/interfaces/gasolinera-list-re
   providedIn: 'root'
 })
 export class GasolineraService {
-
+  
   constructor(private http: HttpClient) { }
 
   getGasolineras(): Observable<any> {
@@ -28,8 +28,7 @@ export class GasolineraService {
     jsonStringReplaced = jsonStringReplaced.replace(/IDMunicipio/gi, 'idMunicipio');
     jsonStringReplaced = jsonStringReplaced.replace(/IDProvincia/gi, 'idProvincia');
     jsonStringReplaced = jsonStringReplaced.replace(/IDCCAA/gi, 'idccaa');
-  
-    
+
 
     let jsonFinal: GasolinerasListResponse = JSON.parse(jsonStringReplaced);
     return jsonFinal.listaEESSPrecio;
