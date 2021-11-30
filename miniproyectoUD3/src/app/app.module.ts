@@ -8,13 +8,15 @@ import { GasolineraListComponent } from './components/gasolinera-list/gasolinera
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { DialogGasolineraDetailComponent } from './dialogs/dialog-gasolinera-detail/dialog-gasolinera-detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     GasolineraItemComponent,
-    GasolineraListComponent
+    GasolineraListComponent,
+    DialogGasolineraDetailComponent
   ],
   imports: [
     BrowserModule,
