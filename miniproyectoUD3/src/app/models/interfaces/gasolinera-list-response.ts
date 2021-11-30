@@ -1,20 +1,22 @@
-export interface GasolineraListResponse {
-
-    
+export interface GasolinerasListResponse {
+    fecha:             string;
+    listaEESSPrecio:   Gasolinera[];
+    nota:              string;
+    resultadoConsulta: string;
 }
 
-export interface ListaEESSPrecio {
-
-    cP:                        String;
-    direccion:                 String;
-    horario:                   String;
-    municipio:                 String;
-    precioGasoleoA:            String;
-    precioGasolina95ES:        String;
-    provincia:                 String;
-    rotulo:                    String;
-    ideess:                    String;
-    idMunicipio:               String;
-    idProvincia:               String;
-    idccaa:                    String;
+export interface Gasolinera {
+    cP:                             string;
+    direccion:                      string;
+    horario:                        string;
+    municipio:                      string;
+    precioGasoleoA:                 string;
+    precioGasolina95E5:             string;
+    precioGasolina98E5:             string;
+    provincia:                      string;
+    rotulo:                         string;
+    ideess:                         string;
+    idMunicipio:                    string;
+    idProvincia:                    string;
+    idccaa:                         string;
 }
